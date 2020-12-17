@@ -1,4 +1,4 @@
-import React, { useState,Image } from 'react';
+import React, { useState } from 'react';
 import premio from '../src/assets/premio.webp';
 import btnvolta from '../src/assets/Botão-Voltar.png';
 
@@ -81,7 +81,7 @@ export default function App() {
 					Você acertou {score} de {questions.length} perguntas
 					
 					<span>					
-						{score==5 ?( <a href="https://www.google.com/forms/about/" > <img src={premio}  alt ='Micro' height='30px'/> Pegue seu prêmio !!</a>
+						{score===5 ?( <a href="https://www.google.com/forms/about/" > <img src={premio}  alt ='Micro' height='30px'/> Pegue seu prêmio !!</a>
 						
 						):
 						<button onClick={voltar}><img src={btnvolta}  alt ='Micro' height='50px'/></button>
